@@ -1,0 +1,210 @@
+{
+  "app": {
+    "name": "i18next"
+  },
+  "kopf": {
+    "ueberschrift": "Übersicht",
+    "start": "Startseite",
+    "pplanen": "Planen",
+    "support": "Support",
+    "handbuch": "Benutzerhandbuch"
+  }
+
+,
+  "uebersicht": {
+  	"ueberschrift": "Übersicht",
+    "lagerbestand": "Lagerbestand",
+    "bestellung": "Bestellung",
+    "leerzeitenkosten": "Leerzeitenkosten",
+    "wartelisteap": "Warteliste Arbeitsplatz",
+    "wartelistemt": "Warteliste Material",
+    "auftrageb": "Aufträge in Bearbeitung",
+    "beendeteauf": "Beendete Aufträge",
+    "durchlaufzeit": "Durchlaufzeiten"
+  },
+
+ "perioden": {
+ 	"periodea": "Periode auswählen",
+	"periode": "Periode ",
+	"periode1": "Periode 1",
+	"periode2": "Periode 2",
+	"periode3": "Periode 3",
+	"periode4": "Periode 4",
+	"periode5": "Periode 5",
+	"periode6": "Periode 6",	
+	"periode7": "Periode 7",	
+	"periode8": "Periode 8",	
+	"periode9": "Periode 9",
+  "periode10": "Periode 10",
+  "periode11": "Periode 11",
+  "naechstePeriode": "Nächste Periode",
+  "prog1": "Prognose +2 Perioden",
+  "prog2": "Prognose +3 Perioden",
+  "prog3": "Prognose +4 Perioden"
+ },
+
+ "artikel": {
+	"artikel": "Artikel",
+	"bezeichnung": "Bezeichnung",
+	"aktuellerb": "aktueller Bestand",
+	"sbestand": "Standardbestand",
+	"preis": "Preis",
+	"lagerwert": "Lagerwert"
+ },
+
+  "bestellung": {
+  	"artikel": "Artikel",
+	"anzahl": "Anzahl",
+	"bestellart": "Bestellart",
+	"normal": "Normal",
+	"eil": "Eilbestellung"
+ },
+
+ "leerzeit": {
+ 	"arbeitsplatz":"Arbeitsplatz",
+ 	"ruestvorgang": "Rüstvorgänge",
+ 	"leerzeit": "Leerzeit",
+ 	"lohnleerkosten":"Lohnleerkosten",
+ 	"maschinenstillstandkosten": "Maschinenstillstandkosten"
+ },
+
+ "wartelistap": {
+ 	"arbeitsplatz": "Arbeitsplatz",
+ 	"produktionsrf":"Produktionsreihenfolge",
+ 	"artikel":"Artikel",
+ 	"anzahl": "Anzahl",
+ 	"zeitbedarf":"Zeitbedarf",
+ 	"gesamtzb":"Gesamtzeitbedarf"
+ },
+
+ "wartelistemt":{
+ 	"teil":"Teil",
+ 	"periode":"Periode",
+ 	"produktionsrf": "Produktionsreihenfolge",
+ 	"artikel":"Artikel",
+ 	"anzahl" : "Anzahl"
+
+ },
+
+ "auftrageb":{
+ 	"arbeitsplatz": "Arbeitsplatz",
+ 	"periode": "Periode",
+ 	"produktionsrf": "Produktionsreihenfolge",
+ 	"artikel": "Artikel",
+ 	"anzahl": "Anzahl",
+ 	"zeitbedarf": "Zeitbedarf"
+ },
+
+ "beendeteauf":{
+ 	"periode":"Periode",
+ 	"fertigungsauf": "Fertigungsauftrag",
+ 	"teil": "Teil",
+ 	"anzahl": "Anzahl",
+ 	"kosten":"Kosten",
+ 	"dkosten":"Durchschnittskosten"
+
+ },
+
+ "dlz":{
+ 	"periode":"Periode",
+ 	"auftrag":"Auftrag",
+ 	"anfang": "Beginn: Per.-Tag-St.-Min.",
+ 	"ende": "Ende: Per.-Tag-St.-Min.",
+ 	"dlz":"Durchlaufzeit",
+ 	"faktor": "Faktor"
+ },
+
+ "support":{
+  "sanfrage":"Supportanfrage zur iRad SCM-System",
+  "hinweis2": "Hinweis für Eilige: Kontaktieren unsere Hotline: 0800-2435698 (Montag bis Freitag von 06:00 bis 17:00 für Sie da)",
+  "kdaten": "Kontaktdaten",
+  "anrede": "Anrede",
+  "frau": "Frau",
+  "herr": "Herr",
+  "nachname":"Nachname",
+  "vorname": "Vorname",
+  "telefon":"Telefon",
+  "time1":"07:00 - 10:00 Uhr",
+  "time2":"10:00 - 13:00 Uhr",
+  "time3":"13:00 - 16:00 Uhr",
+  "time4":" ",
+  "email":"Emailadresse",
+  "bproblem":"Beschreibung des Problems",
+  "stoerung": "Störung",
+  "frage":"Frage zur Bedienung",
+  "fragescm":"Frage zur SCM",
+  "sonstiges":"Sonstiges",
+  "zfassung":"Zusammenfassung des Problems",
+  "senden":"Senden",
+  "sendung": "Ihre Anfrage wurde erfolgreich gesendet. Vielen Dank.",
+  "btext": "Anfragebestätigung"
+},
+
+ "start":{
+  "periode":"Perioden",
+  "txtperiode":"",
+  "lbestand":"Lagerbestand",
+  "txtlbestand":""
+},
+
+ "pplanen":{
+  "planen":"Periode 08 planen",
+  "vplan":"Verkaufsplanung für Periode ",
+  "vertrieb":"Vertrieb",
+  "dverkauf":"Direktverkauf",
+  "pweiter":"Plandaten übernehmen",
+  "next": "Nächster Schritt",
+  "p1":"Kinderfahrräder (P1)",
+  "p2":"Damenfahrräder (P2)",
+  "p3":"Herrenfahrräder (P3)",
+  "produkt":"Produkt",
+  "menge":"Menge",
+  "preis":"Preis",
+  "kstrafe":"Konventionalstrafe",
+  "disp":"1. Disposition",
+  "pauftrag":"2. Produktionsaufträge",
+  "kplan":"3. Kapazitätsplan",
+  "zfassung":"4. Zusammenfassung",
+  "erg":"5. Ergebnis",
+  "helpReihenfolge": "Die Reihenfolge kann durch ziehen und ablegen geändert werden",
+  "helpVertrieb": "Die Reihenfolge kann durch ziehen und ablegen geändert werden",
+  "helpKapazitaet": "Die Reihenfolge kann durch ziehen und ablegen geändert werden"
+ },
+
+ "handbuch":{
+  "hbuch": "Benutzerhandbuch herunterladen",
+  "laden": "Laden Sie das Benutzerhandbuch herunter:",
+  "hladen": "Herunterladen"
+
+ },
+
+  "disp":{
+  "artikel": "Artikel",
+  "sbestand": "Sicherheitsbestand",
+  "lzeit": "Lieferzeit",
+  "bart": "Bestellart",
+  "skosten": "Stückkosten",
+  "mkosten": "Materialkosten",
+  "bmenge": "Bestellmenge"
+ },
+
+ "kapa":{
+  "maschine":"Maschine",
+  "nstunden":"Notwendige Stunden",
+  "schichten":"Schichten",
+  "ustunden":"Überstunden"
+ },
+
+ "zufassung":{
+ "pid":"ID",
+ "bmenge": "Bestellmenge",
+ "bart": "Bestellart",
+ "hmenge":"Herstellmenge",
+  "maschine":"Maschine",
+  "schichten":"Schichten",
+  "ustunden":"Überstunden"
+}
+
+
+ 
+}

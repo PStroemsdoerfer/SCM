@@ -1,0 +1,203 @@
+{
+  "app": {
+    "name": "i18next"
+  },
+  "kopf": {
+    "ueberschrift": " Overview",
+    "start": "Home",
+    "pplanen": "Plan",
+    "support": "Support",
+    "handbuch": "User Guide"
+  },
+
+ "uebersicht": {
+    "ueberschrift": " Overview",
+    "lagerbestand": "Warehouse stock",
+    "bestellung": "Order",
+    "leerzeitenkosten": "Idle time costs",
+    "wartelisteap": "Waiting list workstations",
+    "wartelistemt": "Waiting list stock",
+    "auftrageb": "Orders in work",
+    "beendeteauf": "Completed Orders",
+    "durchlaufzeit": "Cycle times"
+  },
+
+  "perioden": {
+  "periodea": "Select period",
+	"periode": "Period ",
+	"periode1": "Period 1",
+	"periode2": "Period 2",
+	"periode3": "Period 3",
+	"periode4": "Period 4",
+	"periode5": "Period 5",
+	"periode6": "Period 6",	
+	"periode7": "Period 7",	
+	"periode8": "Period 8",	
+	"periode9": "Period 9",
+  "naechstePeriode": "Next Period",
+  "prog1": "Forecast +2 Periods",
+  "prog2": "Forecast +3 Periods",
+  "prog3": "Forecast +4 Periods"
+ },
+ 
+  "artikel": {
+	"artikel": "Article",
+	"bezeichnung": "Designation",
+	"aktuellerb": "Quantity",
+	"sbestand": "Standardquantity",
+	"preis": "Price",
+	"lagerwert": "Stock value"
+ },
+
+  "bestellung": {
+	"artikel": "Article",
+	"anzahl": "Quantity",
+	"bestellart": "Order type",
+	"normal": "Normal",
+	"eil": "fast"
+ },
+
+  "leerzeit": {
+ 	"arbeitsplatz":"Work place",
+ 	"ruestvorgang": "Setup events",
+ 	"leerzeit": "Idle time",
+ 	"lohnleerkosten":"Wage Idle time costs",
+ 	"maschinenstillstandkosten": "Machine Idle time costs"
+ },
+
+ "wartelistap": {
+ 	"arbeitsplatz": "Work place",
+ 	"produktionsrf":"Production order",
+ 	"artikel":"Item",
+ 	"anzahl": "Quantity",
+ 	"zeitbedarf":"Time need",
+ 	"gesamtzb":"Total Time need"
+ },
+
+ "wartelistemt":{
+ 	"teil":"Missing part",
+ 	"periode":"Period",
+ 	"produktionsrf": "Production order",
+ 	"artikel":"Item",
+ 	"anzahl": "Quantity"
+
+ },
+
+ "auftrageb":{
+ 	"arbeitsplatz": "Work place",
+ 	"periode": "Period",
+ 	"produktionsrf": "Production order",
+ 	"artikel": "Item",
+ 	"anzahl": "Quantity",
+ 	"zeitbedarf": "Time need"
+ },
+
+ "beendeteauf":{
+ 	"periode":"Period",
+ 	"fertigungsauf": "Production order",
+ 	"teil": "Batch",
+ 	"anzahl": "Quantity",
+ 	"kosten":"Cost",
+ 	"dkosten":"Average unit costs"
+
+ },
+
+ "dlz":{
+ 	"periode":"Period",
+ 	"auftrag":"Production order",
+ 	"anfang": "started: Period-Day-Hour-Minute",
+ 	"ende": "finished: Period-Day-Hour-Minute",
+ 	"dlz":"Cycle time minimum",
+ 	"faktor": "Cycle time factor"
+ },
+
+  "support":{
+  "sanfrage":"Support Request for IRAD SCM system",
+  "hinweis2": "Attention: Contact our hotline please: 0800-2435698 (Monday to Friday 6:00 to 17:00)",
+  "kdaten": "Contact",
+  "anrede": "Title",
+  "frau": "Mrs.",
+  "herr": "Mr.",
+  "nachname":"last name",
+  "vorname": "first name",
+  "telefon":"Telefon",
+  "time1":"07:00 - 10:00 ",
+  "time2":"10:00 - 13:00 ",
+  "time3":"13:00 - 16:00 ",
+  "time4":" ",
+  "email":"email address",
+  "bproblem":"Description of the problem",
+  "stoerung": "fault",
+  "frage":"operation question",
+  "fragescm":"question for SCM",
+  "sonstiges":"others",
+  "zfassung":"Summary of the problem",
+  "senden":"Send",
+  "sendung": "Your request has been sent successfully. Thank you.",
+  "btext": "Request confirmation"
+},
+
+ "start":{
+  "periode":"Periods",
+  "txtperiode":"",
+  "lbestand":"Current Stock",
+  "txtlbestand":""
+},
+
+ "pplanen":{
+	"planen":"Planning for period 08",
+	"vplan":"Sales plan for period ",
+	"vertrieb":"Distribution",
+	"dverkauf":"Direct Sales",
+	"pweiter":"Transfer plan data",
+	"next": "Next Step",
+  "p1":"Childrens bike (P1)",
+  "p2":"Womens bike (P2)",
+  "p3":"Mens bike (P3)",
+  "produkt":"Artikel",
+  "menge":"Quantity",
+  "preis":"Price",
+  "kstrafe":"Contract penality ",
+  "disp":"1. Disposition",
+  "pauftrag":"2. Material Planning",
+  "kplan":"3. Capacity Planning",
+  "zfassung":"4. Summary",
+  "erg":"5. Result"
+ },
+
+ "handbuch":{
+  "hbuch": "Download User Manual",
+  "laden": "Click here to download the User Manual:",
+  "hladen": "Download"
+
+ },
+
+  "disp":{
+  "artikel": "Article",
+  "sbestand": "safety stock",
+  "lzeit": "Delivery time",
+  "bart": "Order type",
+  "skosten": "Unit costs",
+  "mkosten": "Material costs",
+  "bmenge": "Quantity"
+ },
+
+ "kapa":{
+  "maschine":"Machine",
+  "nstunden":"Required hours",
+  "schichten":"Shifts",
+  "ustunden":"Overtime"
+ },
+
+ "zufassung":{
+ "pid":"ID",
+ "bmenge": "Quantity",
+ "bart": "Type",
+ "hmenge":"Quantity",
+  "maschine":"Machine",
+  "schichten":"Shifts",
+  "ustunden":"Overtime"
+}
+
+ 
+}
