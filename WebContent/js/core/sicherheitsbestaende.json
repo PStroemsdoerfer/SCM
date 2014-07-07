@@ -1,0 +1,146 @@
+{
+	"e1": {
+		"geplanterbestand": 50,
+		"bezeichnung": "Kinderfahrrad"
+	},
+	"ea26": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Pedal"
+	},
+	"e51": {
+		"geplanterbestand": 70,
+		"bezeichnung": "Fahrrad ohne Pedal (K)"
+	},
+	"ea16": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Lenker"
+	},
+	"ea17": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Sattel"
+	},
+	"e50": {
+		"geplanterbestand": 70,
+		"bezeichnung": "Rahmen und Räder (K)"
+	},
+	"e4": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Hinterradgruppe (K)"
+	},
+	"e10": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Schutzblech hinten (K)"
+	},
+	"e49": {
+		"geplanterbestand": 70,
+		"bezeichnung": "Vorderrad (K)"
+	},
+	"e7": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Vorderradgruppe (K)"
+	},
+	"e13": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Schutzblech (K)"
+	},
+	"e18": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Rahmen (K)"
+	},
+	"e2": {
+		"geplanterbestand": 50,
+		"bezeichnung": "Damenfahrrad"
+	},
+	"eb26": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Pedal"
+	},
+	"e56": {
+		"geplanterbestand": 70,
+		"bezeichnung": "Fahrrad ohne Predal (D)"
+	},
+	"eb16": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Lenker"
+	},
+	"eb17": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Sattel"
+	},
+	"e55": {
+		"geplanterbestand": 70,
+		"bezeichnung": "Rahmen und Räder (D)"
+	},
+	"e5": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Hinterradgruppe"
+	},
+	"e11": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Schutzblech (D)"
+	},
+	"e54": {
+		"geplanterbestand": 70,
+		"bezeichnung": "Vorderrad (D)"
+	},
+	"e8": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Vorderrradgruppe (D)"
+	},
+	"e14": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Schutzblech vorne (D)"
+	},
+	"e19": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Rahmen (D)"
+	},
+	"e3": {
+		"geplanterbestand": 50,
+		"bezeichnung": "Herrenfahrrad"
+	},
+	"ec26": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Pedal"
+	},
+	"e31": {
+		"geplanterbestand": 70,
+		"bezeichnung": "Fahrrad ohne Pedale (H)"
+	},
+	"ec16": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Lenker"
+	},
+	"ec17": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Sattel"
+	},
+	"e30": {
+		"geplanterbestand": 70,
+		"bezeichnung": "Rahmen und Räder (H)"
+	},
+	"e6": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Hinterradgruppe"
+	},
+	"e12": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Schutzblech hinten (H)"
+	},
+	"e29": {
+		"geplanterbestand": 70,
+		"bezeichnung": "Vorderrad (H)"
+	},
+	"e9": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Vorderradgruppe (H)"
+	},
+	"e15": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Schutzblech vorne (H)"
+	},
+	"e20": {
+		"geplanterbestand": 100,
+		"bezeichnung": "Rahmen (H)"
+	}
+}

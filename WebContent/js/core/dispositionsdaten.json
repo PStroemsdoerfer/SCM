@@ -1,0 +1,350 @@
+{
+	"21": {
+		"bezeichnung": "Kette",
+		"wert": 5.0,
+		"abweichung": 2.2,
+		"diskont": 300,
+		"sicherheitsbestand": 50,
+		"verwendung": {
+			"p1": 1,
+			"p2": 0,
+			"p3": 0
+		}
+	},
+	"22": {
+		"bezeichnung": "Kette",
+		"wert": 6.5,
+		"abweichung": 2.1,
+		"diskont": 300,
+		"sicherheitsbestand": 50,
+		"verwendung": {
+			"p1": 0,
+			"p2": 1,
+			"p3": 0
+		}
+	},
+	"23": {
+		"bezeichnung": "Kette",
+		"wert": 6.5,
+		"abweichung": 1.4,
+		"diskont": 300,
+		"sicherheitsbestand": 50,
+		"verwendung": {
+			"p1": 0,
+			"p2": 0,
+			"p3": 1
+		}
+	},
+	"24": {
+		"bezeichnung": "Mutter",
+		"wert": 0.06,
+		"abweichung": 3.5,
+		"diskont": 6100,
+		"sicherheitsbestand": 1000,
+		"verwendung": {
+			"p1": 7,
+			"p2": 7,
+			"p3": 7
+		}
+	},
+	"25": {
+		"bezeichnung": "Scheibe",
+		"wert": 0.06,
+		"abweichung": 1.1,
+		"diskont": 3600,
+		"sicherheitsbestand": 500,
+		"verwendung": {
+			"p1": 4,
+			"p2": 4,
+			"p3": 4
+		}
+	},
+	"27": {
+		"bezeichnung": "Schraube",
+		"wert": 0.10,
+		"abweichung": 1.1,
+		"diskont": 1800,
+		"sicherheitsbestand": 200,
+		"verwendung": {
+			"p1": 2,
+			"p2": 2,
+			"p3": 2
+		}
+	},
+	"28": {
+		"bezeichnung": "Rohr",
+		"wert": 1.2,
+		"abweichung": 2.1,
+		"diskont": 4500,
+		"sicherheitsbestand": 500,
+		"verwendung": {
+			"p1": 4,
+			"p2": 5,
+			"p3": 6
+		}
+	},
+	"32": {
+		"bezeichnung": "Farbe",
+		"wert": 0.75,
+		"abweichung": 2.6,
+		"diskont": 2700,
+		"sicherheitsbestand": 200,
+		"verwendung": {
+			"p1": 3,
+			"p2": 3,
+			"p3": 3
+		}
+	},
+	"33": {
+		"bezeichnung": "Felge",
+		"wert": 22.0,
+		"abweichung": 2.4,
+		"diskont": 900,
+		"sicherheitsbestand": 100,
+		"verwendung": {
+			"p1": 0,
+			"p2": 0,
+			"p3": 2
+		}
+	},
+	"34": {
+		"bezeichnung": "Speiche",
+		"wert": 0.1,
+		"abweichung": 1.9,
+		"diskont": 22000,
+		"sicherheitsbestand": 3000,
+		"verwendung": {
+			"p1": 0,
+			"p2": 0,
+			"p3": 72
+		}
+	},
+	"35": {
+		"bezeichnung": "Nabe",
+		"wert": 1.0,
+		"abweichung": 2.6,
+		"diskont": 3600,
+		"sicherheitsbestand": 300,
+		"verwendung": {
+			"p1": 4,
+			"p2": 4,
+			"p3": 4
+		}
+	},
+	"36": {
+		"bezeichnung": "Freilauf",
+		"wert": 8.0,
+		"abweichung": 1.3,
+		"diskont": 900,
+		"sicherheitsbestand": 100,
+		"verwendung": {
+			"p1": 1,
+			"p2": 1,
+			"p3": 1
+		}
+	},
+	"37": {
+		"bezeichnung": "Gabel",
+		"wert": 1.5,
+		"abweichung": 1.8,
+		"diskont": 900,
+		"sicherheitsbestand": 100,
+		"verwendung": {
+			"p1": 1,
+			"p2": 1,
+			"p3": 1
+		}
+	},
+	"38": {
+		"bezeichnung": "Welle",
+		"wert": 1.5,
+		"abweichung": 2.1,
+		"diskont": 300,
+		"sicherheitsbestand": 50,
+		"verwendung": {
+			"p1": 1,
+			"p2": 1,
+			"p3": 1
+		}
+	},
+	"39": {
+		"bezeichnung": "Blech",
+		"wert": 1.5,
+		"abweichung": 1.8,
+		"diskont": 1800,
+		"sicherheitsbestand": 200,
+		"verwendung": {
+			"p1": 2,
+			"p2": 2,
+			"p3": 2
+		}
+	},
+	"40": {
+		"bezeichnung": "Lenker",
+		"wert": 2.5,
+		"abweichung": 1.9,
+		"diskont": 900,
+		"sicherheitsbestand": 150,
+		"verwendung": {
+			"p1": 1,
+			"p2": 1,
+			"p3": 1
+		}
+	},
+	"41": {
+		"bezeichnung": "Mutter",
+		"wert": 0.06,
+		"abweichung": 1.1,
+		"diskont": 900,
+		"sicherheitsbestand": 200,
+		"verwendung": {
+			"p1": 1,
+			"p2": 1,
+			"p3": 1
+		}
+	},
+	"42": {
+		"bezeichnung": "Griff",
+		"wert": 0.1,
+		"abweichung": 1.5,
+		"diskont": 1800,
+		"sicherheitsbestand": 400,
+		"verwendung": {
+			"p1": 2,
+			"p2": 2,
+			"p3": 2
+		}
+	},
+	"43": {
+		"bezeichnung": "Sattel",
+		"wert": 5.0,
+		"abweichung": 2.5,
+		"diskont": 2700,
+		"sicherheitsbestand": 300,
+		"verwendung": {
+			"p1": 1,
+			"p2": 1,
+			"p3": 1
+		}
+	},
+	"44": {
+		"bezeichnung": "Stange",
+		"wert": 0.5,
+		"abweichung": 1.2,
+		"diskont": 900,
+		"sicherheitsbestand": 300,
+		"verwendung": {
+			"p1": 3,
+			"p2": 3,
+			"p3": 3
+		}
+	},
+	"45": {
+		"bezeichnung": "Mutter",
+		"wert": 0.06,
+		"abweichung": 2.0,
+		"diskont": 900,
+		"sicherheitsbestand": 100,
+		"verwendung": {
+			"p1": 1,
+			"p2": 1,
+			"p3": 1
+		}
+	},
+	"46": {
+		"bezeichnung": "Schraube",
+		"wert": 0.1,
+		"abweichung": 1.2,
+		"diskont": 900,
+		"sicherheitsbestand": 100,
+		"verwendung": {
+			"p1": 1,
+			"p2": 1,
+			"p3": 1
+		}
+	},
+	"47": {
+		"bezeichnung": "Zahnkranz",
+		"wert": 3.5,
+		"abweichung": 1.2,
+		"diskont": 900,
+		"sicherheitsbestand": 100,
+		"verwendung": {
+			"p1": 1,
+			"p2": 1,
+			"p3": 1
+		}
+	},
+	"48": {
+		"bezeichnung": "Pedal",
+		"wert": 1.5,
+		"abweichung": 1.2,
+		"diskont": 1800,
+		"sicherheitsbestand": 200,
+		"verwendung": {
+			"p1": 2,
+			"p2": 2,
+			"p3": 2
+		}
+	},
+	"52": {
+		"bezeichnung": "Felge",
+		"wert": 22.0,
+		"abweichung": 2.0,
+		"diskont": 600,
+		"sicherheitsbestand": 50,
+		"verwendung": {
+			"p1": 2,
+			"p2": 0,
+			"p3": 0
+		}
+	},
+	"53": {
+		"bezeichnung": "Speiche",
+		"wert": 0.10,
+		"abweichung": 1.8,
+		"diskont": 22000,
+		"sicherheitsbestand": 3000,
+		"verwendung": {
+			"p1": 72,
+			"p2": 0,
+			"p3": 0
+		}
+	},
+	"57": {
+		"bezeichnung": "Felge",
+		"wert": 22.0,
+		"abweichung": 2.0,
+		"diskont": 600,
+		"sicherheitsbestand": 50,
+		"verwendung": {
+			"p1": 0,
+			"p2": 2,
+			"p3": 0
+		}
+	},
+	"58": {
+		"bezeichnung": "Speiche",
+		"wert": 0.1,
+		"abweichung": 2.1,
+		"diskont": 22000,
+		"sicherheitsbestand": 3000,
+		"verwendung": {
+			"p1": 0,
+			"p2": 72,
+			"p3": 0
+		}
+	},
+	"59": {
+		"bezeichnung": "Schweisdraht",
+		"wert": 0.15,
+		"abweichung": 0.9,
+		"diskont": 1800,
+		"sicherheitsbestand": 200,
+		"verwendung": {
+			"p1": 2,
+			"p2": 2,
+			"p3": 2
+		}
+	}
+}
