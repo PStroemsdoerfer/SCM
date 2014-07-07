@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>iRad SCM-System</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/prettify.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/uebersicht.css" rel="stylesheet">
+
+    <!-- Le javascript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/holder.js"></script>
+    <script type="text/javascript" src="js/i18next.js" /></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <script src="js/funktionen.js"></script>
+    <script src="js/translate.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (("standalone" in window.navigator) && window.navigator.standalone) {
+            // For iOS Apps
+            $('a').on('click', function(e) {
+                e.preventDefault();
+                var new_location = $(this).attr('href');
+                if (new_location != undefined && new_location.substr(0, 1) != '#' && $(this).attr('data-method') == undefined) {
+                    window.location = new_location;
+                }
+            });
+        }
+    });
+    </script>
+</head>
+
+<body>
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="brand" href="#">&emsp;iRad SCM</a>
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse collapse">
+
+                        <p class="navbar-text pull-right">
+                            <a href="#de" align="right">
+                                <img alt="sprache" class="img-rounded" src="img/de.jpg" width="30" height="30" id="de">
+                            </a>&emsp;
+                            <a href="#en">
+                                <img alt="sprache" class="img-circle" src="img/en.jpg" width="30" height="30" id="en">
+                            </a>&emsp;
+                        </p>
+
+
+                        <ul class="nav" id="verweise">
+                            <li>
+                                <a href="index.html" data-i18n="kopf.start" target="_self"></a>
+                            </li>
+                            <li class="active">
+                                <a href="uebersicht.html" data-i18n="kopf.ueberschrift" target="_self"></a>
+                            </li>
+                            <li>
+                                <a href="pplanen.html" data-i18n="kopf.pplanen" target="_self"></a>
+                            </li>
+                            <li>
+                                <a href="support.html" data-i18n="kopf.support" target="_self"></a>
+                            </li>
+                            <li>
+                                <a href="handbuch.html" data-i18n="kopf.handbuch" target="_self"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- /.navbar-inner -->
+            </div>
+            <!-- /.navbar -->
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.navbar-wrapper -->
+
+    <!-- Dropdowns
+  ================================================== -->
+    <br>
+    <br>
+    <section id="dropdowns">
+
+
+            <!-- Dropdown Periodenbutton -->
+            <div style="padding:5px; margin:5px">
+                <img alt="logo" class="img-circle" src="img/logo.png" width="70" height="70" align="left" border="10">
+            </div>
+            <div class="btn-group" align="center">
+                <button id="bperiode" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Periode 7
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="#" data-i18n="perioden.periode1" data-periode="1"></a>
+                    </li>
+                    <li>
+                        <a href="#" data-i18n="perioden.periode2" data-periode="2"></a>
+                    </li>
+                    <li>
+                        <a href="#" data-i18n="perioden.periode3" data-periode="3"></a>
+                    </li>
+                    <li>
+                        <a href="#" data-i18n="perioden.periode4" data-periode="4"></a>
+                    </li>
+                    <li>
+                        <a href="#" data-i18n="perioden.periode5" data-periode="5"></a>
+                    </li>
+                    <li>
+                        <a href="#" data-i18n="perioden.periode6" data-periode="6"></a>
+                    </li>
+                    <li>
+                        <a href="#" data-i18n="perioden.periode7" data-periode="7"></a>
+                    </li>
+                    <li>
+                        <a href="#" data-i18n="perioden.periode8" data-periode="8"></a>
+                    </li>
+                </ul>
+            </div>
+            <legend></legend>
+    </section>
+    <!-- Dropdowns-->
+
+
+
+    <!-- Tabs on the left
+    ================================================== -->
+
+
+    <div class="bs-docs-example">
+        <div class="tabbable tabs-left">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#lA" data-i18n="uebersicht.lagerbestand" data-toggle="tab"></a>
+                </li>
+                <li>
+                    <a href="#lB" data-i18n="uebersicht.bestellung" data-toggle="tab"></a>
+                </li>
+                <li>
+                    <a href="#lC" data-i18n="uebersicht.leerzeitenkosten" data-toggle="tab"></a>
+                </li>
+                <li>
+                    <a href="#lD" data-i18n="uebersicht.wartelisteap" data-toggle="tab"></a>
+                </li>
+                <li>
+                    <a href="#lE" data-i18n="uebersicht.wartelistemt" data-toggle="tab"></a>
+                </li>
+                <li>
+                    <a href="#lF" data-i18n="uebersicht.auftrageb" data-toggle="tab"></a>
+                </li>
+                <li>
+                    <a href="#lG" data-i18n="uebersicht.beendeteauf" data-toggle="tab"></a>
+                </li>
+                <li>
+                    <a href="#lH" data-i18n="uebersicht.durchlaufzeit" data-toggle="tab"></a>
+                </li>
+                <h3>
+            </ul>
+            <div class="tab-content">
+                <div id="content">
+                </div>
+
+
+
+
+</body>
+
+</html>

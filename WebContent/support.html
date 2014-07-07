@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>iRad SCM-System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/prettify.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/uebersicht.css" rel="stylesheet">
+
+
+    <!-- Le javascript
+	================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/holder.js"></script>
+    <script type="text/javascript" src="js/i18next.js" /></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <script src="js/funktionen.js"></script>
+    <script src="js/translate.js"></script>
+    <script>
+    $(document).ready(function() {
+        if (("standalone" in window.navigator) && window.navigator.standalone) {
+            // For iOS Apps
+            $('a').on('click', function(e) {
+                e.preventDefault();
+                var new_location = $(this).attr('href');
+                if (new_location != undefined && new_location.substr(0, 1) != '#' && $(this).attr('data-method') == undefined) {
+                    window.location = new_location;
+                }
+            });
+        }
+    });
+    </script>
+</head>
+
+<body>
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="brand" href="#">&emsp;iRad SCM</a>
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse collapse">
+
+                        <p class="navbar-text pull-right">
+                            <a href="#de" align="right">
+                                <img alt="sprache" class="img-rounded" src="img/de.jpg" width="30" height="30" id="de">
+                            </a>&emsp;
+                            <a href="#en">
+                                <img alt="sprache" class="img-circle" src="img/en.jpg" width="30" height="30" id="en">
+                            </a>&emsp;
+                        </p>
+
+
+                        <ul class="nav" id="verweise">
+                            <li>
+                                <a href="index.html" data-i18n="kopf.start" target="_self"></a>
+                            </li>
+                            <li>
+                                <a href="uebersicht.html" data-i18n="kopf.ueberschrift" target="_self"></a>
+                            </li>
+                            <li>
+                                <a href="pplanen.html" data-i18n="kopf.pplanen" target="_self"></a>
+                            </li>
+                            <li class="active">
+                                <a href="support.html" data-i18n="kopf.support" target="_self"></a>
+                            </li>
+                            <li>
+                                <a href="handbuch.html" data-i18n="kopf.handbuch" target="_self"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- /.navbar-inner -->
+            </div>
+            <!-- /.navbar -->
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.navbar-wrapper -->
+    <br>
+    <br>
+    <br>
+
+    <!-- Container
+	================================================== -->
+    <div class="container">
+
+        <!-- Main hero unit for a primary marketing message or call to action -->
+        <div class="hero-unit">
+
+            <form method="post" action="/css/formular">
+                <h3 align="center" data-i18n="support.sanfrage"></h3>
+
+                <!-- Formular
+	================================================== -->
+                <table>
+                    <tr>
+                        <th align="left">
+                            <legend data-i18n="support.kdaten"></legend>
+                        </th>
+                        <th align="left">
+                            <legend data-i18n="support.bproblem"></legend>
+                        </th>
+                    </tr>
+                    <tr>
+                        <form class="form-horizontal">
+
+                            <fieldset>
+                                <td align="top">
+                                    <div class="control-group">
+
+                                        <select class="input-small">
+                                            <option data-i18n="support.anrede"></option>
+                                            <option data-i18n="support.frau"></option>
+                                            <option data-i18n="support.herr"></option>
+                                        </select>
+                                        <br>
+                                        <input type="text" id="inputAnrede" data-i18n="[placeholder]support.nachname;">
+                                        <br>
+                                        <input type="text" id="inputVorname" data-i18n="[placeholder]support.vorname;">
+                                        <br>
+                                        <input type="text" id="inputTelefon" data-i18n="[placeholder]support.telefon;">
+                                        <br>
+                                        <i class="icon-time"></i>
+
+                                        <label class="checkbox inline">
+
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <p data-i18n="support.time1"></p>
+                                        </label>
+                                        <label class="checkbox inline">
+                                            <input type="checkbox" id="inlineCheckbox2" value="option2">
+                                            <p data-i18n="support.time2"></p>
+                                        </label>
+                                        <label class="checkbox inline">
+                                            <input type="checkbox" id="inlineCheckbox3" value="option3">
+                                            <p data-i18n="support.time3"></p>
+                                        </label>
+                                        <label class="checkbox inline">
+                                            <p type="text" id="inlineCheckbox4" value="option4">
+                                                <p data-i18n="support.time4"></p>
+                                        </label>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <input type="text" class="input-xlarge" id="inputEmail" data-i18n="[placeholder]support.email;">
+                                        </div>
+                                </td>
+
+
+                                <td>
+                                    <fieldset>
+
+                                        <select>
+                                            <option data-i18n="support.stoerung"></option>
+                                            <option data-i18n="support.frage"></option>
+                                            <option data-i18n="support.fragescm"></option>
+                                            <option data-i18n="support.sonstiges"></option>
+                                        </select>
+                                        <br>
+                                        <input type="text" class="input-xxlarge" id="inputBetreff" data-i18n="[placeholder]support.zfassung;">
+                                        <br>
+                                        <textarea rows="6" class="input-xxlarge" data-i18n="[placeholder]support.bproblem;"></textarea>
+                                        <br>
+
+                                        </div>
+                                        <div style="text-align:right">
+                                            <a href="sende_bestaetigung.html" target="_self" button type="submit" class="btn" data-i18n="support.senden" align="middle"></a>
+                                        </div>
+        </div>
+    </div>
+    </td>
+
+    </form>
+    </tr>
+    </table>
+    <!-- Ende Formular
+	================================================== -->
+
+
+</body>
+
+</html>
