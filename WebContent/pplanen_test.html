@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>iRad SCM-System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+
+    <link href="css/prettify.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/uebersicht.css" rel="stylesheet">
+    <link href="css/sortable.css" rel="stylesheet">
+    <script src="js/jquery-ui-1.10.3.custom.js"></script>
+    <link href="css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/holder.js"></script>
+    <script src='js/jquery-sortable.js'></script>
+    <script src='js/jquery-sortable.js'></script>
+    <script src="js/core/pplanen.js"></script>
+    <script type="text/javascript" src="js/i18next.js" /></script>
+    <script src="js/jquery-ui"></script>
+    <script src="js/ui.touch-punch"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <script src="js/translate.js"></script>
+
+    <script>
+    $(function() {
+        
+        $( "#accordion2" ).accordion();
+
+        // Hover states on the static widgets
+        $( "#dialog-link, #icons li" ).hover(
+            function() {
+                $( this ).addClass( "ui-state-hover" );
+            },
+            function() {
+                $( this ).removeClass( "ui-state-hover" );
+            }
+        );
+    });
+    </script>
+    <style>
+
+    #dialog-link span.ui-icon {
+        margin: 0 5px 0 0;
+        position: absolute;
+        left: .2em;
+        top: 50%;
+        margin-top: -8px;
+    }
+
+    #icons {
+        margin: 0;
+        padding: 0;
+    }
+    #icons li {
+        margin: 2px;
+        position: relative;
+        padding: 4px 0;
+        cursor: pointer;
+        float: left;
+        list-style: none;
+    }
+    #icons span.ui-icon {
+        float: left;
+        margin: 0 6px;
+    }
+    .fakewindowcontain .ui-widget-overlay {
+        position: absolute;
+    }
+    </style>
+  </head>
+
+    <script>
+    $(document).ready(function() {
+        if (("standalone" in window.navigator) && window.navigator.standalone) {
+            // For iOS Apps
+            $('a').on('click', function(e) {
+                e.preventDefault();
+                var new_location = $(this).attr('href');
+                if (new_location != undefined && new_location.substr(0, 1) != '#' && $(this).attr('data-method') == undefined) {
+                    window.location = new_location;
+                }
+            });
+        }
+    });
+    </script>
+</head>
+
+
+<body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="brand" href="#">&emsp;iRad SCM</a>
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse collapse">
+
+                        <p class="navbar-text pull-right">
+                            <a href="#de" align="right">
+                                <img alt="sprache" class="img-rounded" src="img/de.jpg" width="30" height="30" id="de">
+                            </a>&emsp;
+                            <a href="#en">
+                                <img alt="sprache" class="img-circle" src="img/en.jpg" width="30" height="30" id="en">
+                            </a>&emsp;
+                        </p>
+
+
+                        <ul class="nav" id="verweise">
+                            <li>
+                                <a href="index.html" data-i18n="kopf.start" target="_self"></a>
+                            </li>
+                            <li>
+                                <a href="uebersicht.html" data-i18n="kopf.ueberschrift" target="_self"></a>
+                            </li>
+                            <li class="active">
+                                <a href="pplanen.html" class="active" data-i18n="kopf.pplanen" target="_self"></a>
+                            </li>
+                            <li>
+                                <a href="support.html" data-i18n="kopf.support" target="_self"></a>
+                            </li>
+                            <li>
+                                <a href="handbuch.html" data-i18n="kopf.handbuch" target="_self"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- /.navbar-inner -->
+            </div>
+            <!-- /.navbar -->
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.navbar-wrapper -->
+
+
+
+
+    <!-- Dropdowns
+  ================================================== -->
+
+<br><br>
+    <fieldset>
+
+
+
+    <!-- Dropdown Periodenbutton -->
+    <div style="padding:5px; margin:5px; height: 0px;">
+        <img alt="logo" class="img-circle" src="img/logo.png" width="70" height="70" align="left" border="10">
+        <div class="progress" style="margin-top: 15px; margin-left:90px; margin-right:10px;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+            <div class="bar bar-success" style="width: 0%"></div>
+        </div>
+    </div>
+
+
+      <div class="ui-accordion " id="accordion2">
+            <div class="accordion-group">
+
+                   <h4 class="accordion-toggle ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active ui-corner-top" role="tab" id="ui-accordion-accordion-header-0" aria-controls="ui-accordion-accordion-panel-0" aria-selected="true" tabindex="0" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"><span class="ui-accordion-header-icon ui-icon ui-icon ui-icon-carat-2-n-s"></span>
+                          <p align="left" data-i18n="pplanen.vplan"></p></div>
+                          <div class="progress" style="margin-bottom: 9px; margin-left:10px; margin-right:10px; width:700px;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            <div class="bar bar-success" style="width: 0%"></div>
+                          </div></h4>
+               
+                <div id="collapseOne" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                        <ul class="nav nav-pills">
+                            <li id="vertrieb">
+                                <a href="#" data-i18n="pplanen.vertrieb"></a>
+                            </li>
+                            <li id="direktverkauf">
+                                <a href="#" data-i18n="pplanen.dverkauf"></a>
+                            </li>
+                            <li id="weiter" style="margin-left:50px">
+                                <a href="#" class="btn" data-i18n="pplanen.pweiter"></a>
+                            </li>
+                        </ul>
+                        <div class="bs-docs-example">
+=======
+    <br>
+    <br>
+
+
+    <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                    <div>
+                        <span data-i18n="pplanen.vplan"></span><i class="icon-chevron-up"></i><i class="icon-chevron-down"></i>
+                    </div>
+                </a>
+            </div>
+            <div id="collapseOne" class="accordion-body">
+                <div class="accordion-inner">
+                    <ul class="nav nav-pills">
+                        <li id="vertrieb">
+                            <a href="#" data-i18n="pplanen.vertrieb"></a>
+                        </li>
+                        <li id="direktverkauf">
+                            <a href="#" data-i18n="pplanen.dverkauf"></a>
+                        </li>
+                        <li id="weiter" style="margin-left:50px">
+                            <a href="#" class="btn" data-i18n="pplanen.pweiter"></a>
+                        </li>
+                    </ul>
+                    <div class="bs-docs-example">
+
+                        <table class="table table-condensed table table-striped" id="vertriebstabelle">
+                            <thead>
+                                <tr>
+                                    <th data-i18n="artikel.produkt"></th>
+                                    <th data-i18n="perioden.naechstePeriode"></th>
+                                    <th data-i18n="perioden.prog1"></th>
+                                    <th data-i18n="perioden.prog2"></th>
+                                    <th data-i18n="perioden.prog3"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-i18n="pplanen.p1"></td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p11" value="150" step="10" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p12" value="150" step="10" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p13" value="150" step="10" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p14" value="150" step="10" min="0">
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>Damenfahrräder (P2)</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p21" value="150" step="10" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p22" value="150" step="10" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p23" value="150" step="10" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p24" value="150" step="10" min="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Herrenfahrräder (P3)</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p31" value="150" step="10" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p32" value="150" step="10" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p33" value="150" step="10" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p34" value="150" step="10" min="0">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <table class="table table-condensed table table-striped" id="direktverkauftabelle" style="display:none">
+                            <thead>
+                                <tr>
+                                    <th>Produkt</th>
+                                    <th>Menge</th>
+                                    <th>Preis</th>
+                                    <th>Konventionalstrafe</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Kinderfahrräder (P1)</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p1m" value="0" step="10" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p1p" value="0.0" step="1.0" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p1k" value="0.0" step="1.0" min="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Damenfahrräder (P2)</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p2m" value="0" step="10" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p2p" value="0.0" step="1.0" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p2k" value="0.0" step="1.0" min="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Herrenfahrräder (P3)</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p3m" value="0" step="10" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p3p" value="0.0" step="1.0" min="0">
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control" id="p3k" value="0.0" step="1.0" min="0">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+<<<<<<< .mine
+            </div></div>
+=======
+            </div>
+        </div>
+        <br>
+    </div>
+>>>>>>> .r67
+
+<<<<<<< .mine
+
+            <!-- Tabs on the left
+=======
+    <!-- Tabs on the left
+>>>>>>> .r67
+    ================================================== -->
+
+
+    <div class="bs-docs-example">
+        <div class="tabbable tabs-left">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#lA" data-toggle="tab">1. Disposition</a>
+                </li>
+                <li><a href="#lB" data-toggle="tab" id="produktionsplan">2. Produktionsauftr&auml;ge</a>
+                </li>
+                <li><a href="#lC" data-toggle="tab" id="kapazitaetsplan">3. Kapazit&auml;tsplan</a>
+                </li>
+                <li><a href="#lD" data-toggle="tab" id="zusammenfassung">4. Zusammenfassung</a>
+                </li>
+                <li><a href="#lE" data-toggle="tab" id="ergebnis">5. Ergebnis</a>
+                </li>
+				<li id="nextstep" style="margin-left:10px; margin-top:15px;>
+					<a href="#" class="btn" data-i18n="pplanen.next"></a>
+				</li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="lA"></div>
+                <div class="tab-pane" id="lB">
+                    <div class="span6">
+                        <ol class='productionlist'></ol>
+                    </div>
+                </div>
+                <div class="tab-pane" id="lC"></div>
+                <div class="tab-pane" id="lD"></div>
+                <div class="tab-pane" id="lE">
+                    <!-- http://www.iwi.hs-karlsruhe.de/scs/simulate/upload.jsp/ -->
+                    <iframe src="http://www.iwi.hs-karlsruhe.de/scs/simulate/upload.jsp" scrolling="auto" height="500" width="90%" class="iframe_css" name="scsframe">
+                        Ihr Browser unterstützt keine FRAMES!
+                    </iframe>
+                    <script>
+                    document.getElementsByName("j_username").value = "kap10";
+                    document.getElementsByName("j_password").value = "drossel";
+                     //document.getElementsByName("btnSubmit").click();
+                     //console.log(document.getElementsByName("scsframe")[0]);
+                    var frame = document.getElementsByName("scsframe")[0];
+                    var doc = frame.contentDocument || frame.contentWindow.document;
+                    console.log("INFO Content " + doc);
+                    console.log(doc.querySelectorAll('body *'));
+                     //document.getElementsByName("scsframe")[0].contentWindow.document.getElementsByName("j_username")[0].value="kap10";
+                     //console.log("SCS Seite " + document.getElementsByName("scsframe")[0].contentDocument.getElementsByName("j_username")[0]);
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!-- /tabbable -->
+    </div>
+</body>
+
+</html>

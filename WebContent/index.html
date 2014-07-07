@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>iRad SCM-System</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Le styles -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" href="./js/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./js/bootstrap/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="./css/jquery.carousel.fullscreen.css" />
+
+    <script type="text/javascript" src="./js/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.carousel.fullscreen.js"></script>
+    <script type="text/javascript" src="js/i18next.js"></script>
+    <script type="text/javascript" src="js/translate.js"></script>
+      <link href="css/prettify.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+   <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+      
+            <a class="brand" href="#">&emsp;iRad SCM</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+
+            <p class="navbar-text pull-right">
+            <a href="#de" align="right"><img alt="sprache" class="img-rounded" src="img/de.jpg"width="30" height="30" id="de"></a>&emsp;
+            <a href="#en" ><img alt="sprache" class="img-circle" src="img/en.jpg"width="30" height="30" id="en"></a>&emsp;
+            </p>
+
+
+              <ul class="nav" id="verweise">
+                <li class="active"><a href="index.html" data-i18n="kopf.start" target="_self"></a></li>
+                <li><a href="uebersicht.html" data-i18n="kopf.ueberschrift" target="_self"></a></li>
+                <li><a href="pplanen.html" data-i18n="kopf.pplanen" target="_self"></a></li>
+                <li><a href="support.html" data-i18n="kopf.support" target="_self"></a></li>
+                <li><a href="handbuch.html" data-i18n="kopf.handbuch" target="_self"></a></li>
+            </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+    
+    <!-- Carousel
+    ================================================== -->
+    <div id="carousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="active item">
+                <img src="img/scm.jpg" alt="" />
+                <div class="container">
+                    <div id="chartContainer" style="width: 100%; height: 440px;"></div>
+                    <div class="carousel-caption">
+                        <h1 data-i18n="start.periode"></h1>
+                        <p class="lead" data-i18n="start.txtperiode"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/planen2.jpg" alt="" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 data-i18n="start.lbestand"</h1>
+                        <p class="lead" data-i18n="start.txtbestand"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+    </div>
+
+
+
+
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#Carousel').carousel()
+          interval: 1000
+        })
+      }(window.jQuery)
+
+      $(document).ready(function(){
+    if (("standalone" in window.navigator) && window.navigator.standalone) {
+      // For iOS Apps
+      $('a').on('click', function(e){
+        e.preventDefault();
+        var new_location = $(this).attr('href');
+        if (new_location != undefined && new_location.substr(0, 1) != '#' && $(this).attr('data-method') == undefined){
+          window.location = new_location;
+        }
+      });
+    }
+  });
+    </script>
+    <script src="js/holder.js"></script>
+  </body>
+</html>
