@@ -1,0 +1,16 @@
+.tablehead {
+text-align: right;
+background: #55A2FA;
+font-weight: bold;
+}
+
+.tableshow {
+background: #FFF;
+min-width: 700px;
+}
+
+.tableline {
+background: #EEE;
+text-align: right;
+}
+
